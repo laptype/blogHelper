@@ -9,6 +9,8 @@ import utils
 import sys
 import shutil
 
+# pyinstaller -w -F --add-data "C:\Users\12053\anaconda3\envs\test\lib\site-packages\tkinterdnd2;tkinterdnd2" --add-data "config.json;." gui_test2.py
+
 def get_config_path():
     # Determine if the script is running in a PyInstaller bundle
     if hasattr(sys, '_MEIPASS'):
